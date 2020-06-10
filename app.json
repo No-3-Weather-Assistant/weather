@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/tips/tips",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天气小助手",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "",
+        "iconPath": "assets/search.png",
+        "selectedIconPath": "assets/search.png"
+      },
+      {
+      "pagePath": "pages/index/index",
+      "text": "",
+      "iconPath": "assets/home.png",
+      "selectedIconPath": "assets/home.png"
+    },
+    {
+      "pagePath": "pages/tips/tips",
+      "text": "",
+      "iconPath": "assets/film.png",
+      "selectedIconPath": "assets/film.png"
+    }
+]
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"你的位置信息将用于小程序"
+    }
+  }
+
+}

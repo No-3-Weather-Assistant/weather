@@ -1,0 +1,17 @@
+
+<view style="display:flex;justify-content:center" >
+今日电影推荐
+</view>
+<view >
+<view class="font-title">{{movie_share[cond_code_d|0].name1}}</view>
+<image style="width:200px;height:250px" src='{{movie_share[cond_code_d|0].icon1}}' ></image>
+<view class="font_txt">简介：{{movie_share[cond_code_d|0].brief1}}</view>
+<view class="font-title">{{movie_share[cond_code_d|0].name2}}</view>
+<image style="width:200px;height:250px" src='{{movie_share[cond_code_d|0].icon2}}' ></image>
+<view class="font_txt">简介：{{movie_share[cond_code_d|0].brief2}}</view>
+<view class="font-title">{{movie_share[cond_code_d|0].name3}}</view>
+<image style="width:200px;height:250px" src='{{movie_share[cond_code_d|0].icon3}}' ></image>
+<view class="font_txt">简介：{{movie_share[cond_code_d|0].brief3}}</view>
+</view>
+
+<button class="gbutton" open-type='feedback'>意见反馈</button>

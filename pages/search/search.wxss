@@ -1,0 +1,97 @@
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: lightsteelblue;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+.search{
+  width: 100%;
+  height: 50%;
+  background-color: #ccc;
+  padding: 0 50px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  position: relative;
+
+}
+.search input{
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+.search image{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 65px;
+  top: 15px;
+  z-index: 10000;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  box-sizing: border-box;
+} 
+.weather{
+  height: 110px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #FFF;
+  padding: 5PX 15px;
+  display: flex;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.weather>view{
+  flex: 1;
+}
+.weather>view>view{
+  margin: 5px 0;
+}
+.yesterday{
+  background-color: #30BCAF;
+}
+.today{
+  background-color: #78A4be;
+}
+.tomorrow{
+  background-color: #FCB654;
+}
+.location,.cond_txt{
+  font-size: 14px;
+}
+.date,.tmp{
+  font-weight: bold;
+}
+.weather_icon{
+  text-align: center;
+  height: 65px;
+}
+.weather_icon image{
+  width: 75px;
+  height: 100%;
+}
+.lastUpdateDate{
+  font-size: 10px;
+  text-align: center;
+}
+.tips{
+  font-size: 10px;
+  text-align: center;
+}

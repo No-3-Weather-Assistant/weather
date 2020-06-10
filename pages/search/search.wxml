@@ -1,0 +1,71 @@
+<view class="wrapper">
+<!--头部-->
+  <view class="header">
+       <text>天气查询</text>
+  </view>
+ <!--输入框-->
+  <view class="search">
+       <!-- 事件绑定 input_event -->
+      <input placeholder="请输入城市" bindinput="input_event"></input>
+      <!--    事件绑定 tab_event      -->
+      <image src="../../assets/search.png" bindtap="tap_event"></image>
+  </view>
+  <!--天气列表-->
+  <view class="main">
+      <view class="list"> 
+           <view class="item"> 
+             <navigator url="pages/detail/detail?id=">
+               <view class="container">
+  <view class="weather yesterday">
+    <view>
+      <view class='date'>今天</view>
+      <view class='location'>{{basic.location}}/{{basic.parent_city}}</view>
+      <view class='tmp'>{{today.tmp_min}}℃~{{today.tmp_max}}℃</view>
+      <view class='cond_txt'>{{today.cond_txt_d}}</view>
+    </view>
+    <view>
+      <view class='weather_icon'>
+        <image src='{{todyIcon}}'></image>
+      </view>
+      <view class='lastUpdateDate'>最后更新：{{update}}</view>
+    </view>
+  </view>
+  <view class="weather today">
+    <view>
+      <text>明天</text>
+       <view class='location'>{{basic.location}}/{{basic.parent_city}}</view>
+      <view class='tmp'>{{tomorrow.tmp_min}}℃~{{tomorrow.tmp_max}}℃</view>
+      <view class='cond_txt'>{{tomorrow.cond_txt_d}}</view>
+    </view>
+    <view>
+      <view class='weather_icon'>
+        <image src='{{tomorrowIcon}}'></image>
+      </view>
+      <view class='lastUpdateDate'>最后更新：{{update}}</view>
+      </view>
+  </view>
+  <view class="weather tomorrow">
+    <view>
+      <text>后天</text>
+       <view class='location'>{{basic.location}}/{{basic.parent_city}}</view>
+      <view class='tmp'>{{afterTomor.tmp_min}}℃~{{afterTomor.tmp_max}}℃</view>
+      <view class='cond_txt'>{{afterTomor.cond_txt_d}}</view>
+    </view>
+    <view>
+    <view class='weather_icon'>
+        <image src='{{afterTomorIcon}}'></image>
+      </view>
+      <view class='lastUpdateDate'>最后更新：{{update}}</view>
+    </view>
+  </view>
+</view>
+             </navigator>
+           
+           </view>
+      </view>
+  
+  </view>
+
+
+
+</view>
